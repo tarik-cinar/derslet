@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anaRenk"
+    tools:context=".Giris">
+
+    <TextView
+        android:id="@+id/uygulamaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="DERSLET"
+        android:textColor="@color/beyaz"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/karsilamaMesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hoşgeldiniz!"
+        android:textColor="@color/beyaz"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uygulamaAdi" />
+
+    <TextView
+        android:id="@+id/bilgiMesaj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Okul bilgileriniz ile giriş yapabilirsiniz."
+        android:textColor="@color/beyaz_75"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/karsilamaMesaj" />
+
+    <EditText
+        android:id="@+id/kullaniciNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/beyaz"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Kullanıcı No"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/beyaz"
+        android:textColorHint="@color/beyaz_75"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgiMesaj" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/beyaz"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/beyaz"
+        android:textColorHint="@color/beyaz_75"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciNo" />
+
+    <Button
+        android:id="@+id/girisButon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/buton_beyaz"
+        android:fontFamily="sans-serif-black"
+        android:text="GİRİŞ YAP"
+        android:textColor="@color/anaRenk"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
