@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgretmenDersKontrolKontrol">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
+    <View
+        android:id="@+id/altbar"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:background="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buton_qrkod"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/buton_beyaz"
+        android:fontFamily="sans-serif"
+        android:text="QR KOD AÇ"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/altbar"
+        app:layout_constraintEnd_toStartOf="@+id/buton_bitir"
+        app:layout_constraintStart_toStartOf="@id/altbar"
+        app:layout_constraintTop_toTopOf="@+id/altbar" />
+
+    <Button
+        android:id="@+id/buton_bitir"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/buton_beyaz"
+        android:fontFamily="sans-serif"
+        android:text="BİTİR"
+        android:textColor="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="@+id/altbar"
+        app:layout_constraintEnd_toEndOf="@+id/altbar"
+        app:layout_constraintStart_toEndOf="@+id/buton_qrkod"
+        app:layout_constraintTop_toTopOf="@+id/altbar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
