@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
+        <activity android:name=".OgretmenDersKontrol"></activity>
         <activity android:name=".OgretmenAyarlar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
