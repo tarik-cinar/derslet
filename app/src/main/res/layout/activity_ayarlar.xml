@@ -159,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Renk Ayarları"
                 android:textColor="@color/anaRenk"
                 android:textSize="18sp"
@@ -188,6 +189,7 @@
                 android:background="@drawable/buton_egimli_sol_beyaz_kenar_anarenk"
                 android:text="RENK AYAR"
                 android:textColor="@color/anaRenk"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toStartOf="@+id/renk_ayar_orta"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/renk_baslik" />
@@ -202,6 +204,7 @@
                 android:background="@drawable/buton_beyaz_kenar_anarenk"
                 android:text="RENK AYAR"
                 android:textColor="@color/anaRenk"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toStartOf="@+id/renk_ayar_sag"
                 app:layout_constraintStart_toEndOf="@+id/renk_ayar_sol"
                 app:layout_constraintTop_toBottomOf="@+id/renk_baslik" />
@@ -216,9 +219,87 @@
                 android:background="@drawable/buton_egimli_sag_beyaz_kenar_anarenk"
                 android:text="RENK AYAR"
                 android:textColor="@color/anaRenk"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/renk_ayar_orta"
                 app:layout_constraintTop_toBottomOf="@+id/renk_baslik" />
+
+            <View
+                android:id="@+id/uygulama_ayarlari_yatay_sol"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/anaRenk"
+                app:layout_constraintBottom_toBottomOf="@+id/uygulama_ayarlari_baslik"
+                app:layout_constraintEnd_toStartOf="@+id/uygulama_ayarlari_baslik"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/uygulama_ayarlari_baslik" />
+
+            <TextView
+                android:id="@+id/uygulama_ayarlari_baslik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Uygulama Ayarları"
+                android:textColor="@color/anaRenk"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/renk_ayar_orta" />
+
+            <View
+                android:id="@+id/uygulama_ayarlari_yatay_sag"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/anaRenk"
+                app:layout_constraintBottom_toBottomOf="@+id/uygulama_ayarlari_baslik"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/uygulama_ayarlari_baslik"
+                app:layout_constraintTop_toTopOf="@+id/uygulama_ayarlari_baslik" />
+
+            <Switch
+                android:id="@+id/ayar1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="sans-serif"
+                android:foregroundTint="@color/anaRenk"
+                android:text="Ayar İsmi"
+                android:textAlignment="inherit"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                android:theme="@style/Switch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uygulama_ayarlari_baslik" />
+
+            <Switch
+                android:id="@+id/ayar2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif"
+                android:foregroundTint="@color/anaRenk"
+                android:text="Ayar İsmi"
+                android:textAlignment="inherit"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                android:theme="@style/Switch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ayar1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
