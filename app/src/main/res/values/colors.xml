@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <!-- Genel -->
     <color name="anaRenk">#691BCC</color>
+    <color name="anaRenk_75">#BF691BCC</color>
+    <color name="anaRenk_50">#80691BCC</color>
+    <color name="anaRenk_25">#40691BCC</color>
     <color name="ustBar">#191919</color>
     <color name="beyaz">#FFFFFF</color>
     <color name="beyaz_75">#BFFFFFFF</color>
