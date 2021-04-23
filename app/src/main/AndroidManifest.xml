@@ -16,14 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OgretmenQrKod"></activity>
-        <activity android:name=".OgretmenDersKontrol"></activity>
-        <activity android:name=".OgretmenDersKontrolKontrol"></activity>
-        <activity android:name=".OgretmenMenu"></activity>
-        <activity android:name=".OgretmenAyarlar"></activity>
-        <activity android:name=".OgrenciAyarlar"></activity>
-        <activity android:name=".Giris"></activity>
-        <activity android:name=".Acilis"></activity>
+        <activity android:name=".OgretmenSohbetListesi"> </activity>
+        <activity android:name=".OgretmenQrKod"> </activity>
+        <activity android:name=".OgretmenDersKontrol"> </activity>
+        <activity android:name=".OgretmenDersKontrolKontrol"> </activity>
+        <activity android:name=".OgretmenMenu"> </activity>
+        <activity android:name=".OgretmenAyarlar"> </activity>
+        <activity android:name=".OgrenciAyarlar"> </activity>
+        <activity android:name=".Giris"> </activity>
+        <activity android:name=".Acilis"> </activity>
         <activity android:name=".MainActivity" />
     </application>
 
