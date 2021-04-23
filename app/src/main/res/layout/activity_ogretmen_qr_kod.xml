@@ -10,4 +10,29 @@
         android:id="@+id/include"
         layout="@layout/ustbar1" />
 
+    <View
+        android:id="@+id/bilgi"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/kutu_egimli_10_tum_anarenk_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bilgimetni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Ders İsmi"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bilgi"
+        app:layout_constraintEnd_toEndOf="@+id/bilgi"
+        app:layout_constraintStart_toStartOf="@+id/bilgi"
+        app:layout_constraintTop_toTopOf="@+id/bilgi" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
