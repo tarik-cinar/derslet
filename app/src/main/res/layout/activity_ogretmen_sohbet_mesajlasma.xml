@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgretmenSohbetMesajlasma">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ogrenci_profil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/kare_egimli_10_ust_anarenk"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/gelenmesaj"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/Sohbet.Profil"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/ogrenci_isim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Ögrenci İsim Soyisim"
+                android:textAlignment="textStart"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/gelenmesaj"
+                app:layout_constraintEnd_toEndOf="@+id/gelenmesaj"
+                app:layout_constraintStart_toEndOf="@+id/ogrenci_profil"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci_profil" />
+
+            <TextView
+                android:id="@+id/gelenmesaj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_egimli_10_sol_ust_haric_beyaz_kenar_anarenk"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Gelen Mesaj"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci_profil" />
+
+            <TextView
+                android:id="@+id/ogretmen_isim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Ögrenci İsim Soyisim"
+                android:textAlignment="textEnd"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/gidenmesaj"
+                app:layout_constraintEnd_toStartOf="@+id/ogretmen_profil"
+                app:layout_constraintStart_toStartOf="@+id/gidenmesaj"
+                app:layout_constraintTop_toTopOf="@+id/ogretmen_profil" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ogretmen_profil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_egimli_10_ust_anarenk"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gelenmesaj"
+                app:shapeAppearanceOverlay="@style/Sohbet.Profil"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/gidenmesaj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_egimli_10_sag_ust_haric_beyaz_kenar_anarenk"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Giden Mesaj"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ogretmen_profil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buton_dosya_ekle"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/buton_egimli_20_sol_beyaz_kenar_anarenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mesaj"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mesaj"
+        android:layout_width="252dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buton_beyaz_kenar_anarenk"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/buton_dosya_ekle"
+        app:layout_constraintEnd_toStartOf="@+id/button_gönder"
+        app:layout_constraintStart_toEndOf="@+id/buton_dosya_ekle"
+        app:layout_constraintTop_toTopOf="@+id/buton_dosya_ekle" />
+
+    <Button
+        android:id="@+id/button_gönder"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/kare_egimli_20_sag_anarenk"
+        android:fontFamily="sans-serif-medium"
+        android:text=">"
+        android:textColor="@color/beyaz"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mesaj" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
