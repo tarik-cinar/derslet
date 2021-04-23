@@ -24,4 +24,12 @@
         <!-- inactive track color (30% transparency) -->
         <item name="android:colorForeground">#42221f1f</item>
     </style>
+
+    <style name="Sohbet.Profil" parent="">
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
 </resources>

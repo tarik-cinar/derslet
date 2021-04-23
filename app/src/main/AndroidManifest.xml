@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OgretmenSohbetMesajlasma"></activity>
+        <activity android:name=".OgretmenSohbetListesi"></activity>
         <activity android:name=".OgretmenQrKod"></activity>
         <activity android:name=".OgretmenDersKontrol"></activity>
         <activity android:name=".OgretmenDersKontrolKontrol"></activity>
