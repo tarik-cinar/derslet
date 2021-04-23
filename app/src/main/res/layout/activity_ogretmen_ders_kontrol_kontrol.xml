@@ -58,7 +58,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/buton_egimli_10_tum_beyaz_kenar_anarenk"
+        android:background="@drawable/kare_egim_10_kenar"
         app:layout_constraintEnd_toStartOf="@+id/gecen_sure_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
@@ -83,7 +83,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
-        android:background="@drawable/buton_egimli_10_tum_beyaz_kenar_anarenk"
+        android:background="@drawable/kare_egim_10_kenar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/kisi_sayisi_bg"
         app:layout_constraintTop_toBottomOf="@+id/include" />

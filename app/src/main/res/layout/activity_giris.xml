@@ -52,61 +52,96 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/karsilamaMesaj" />
 
-    <EditText
-        android:id="@+id/kullaniciNo"
-        android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telefon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="75dp"
         android:layout_marginEnd="50dp"
-        android:backgroundTint="@color/beyaz"
-        android:ems="10"
-        android:fontFamily="sans-serif"
         android:hint="Kullanıcı No"
-        android:inputType="number"
-        android:paddingLeft="10dp"
-        android:paddingBottom="15dp"
-        android:textColor="@color/beyaz"
-        android:textColorHint="@color/beyaz_75"
-        android:textSize="20sp"
+        android:textColorHint="@color/beyaz"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/beyaz"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/beyaz"
+        app:hintTextColor="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bilgiMesaj" />
+        app:layout_constraintTop_toBottomOf="@+id/bilgiMesaj"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+        app:startIconTint="@color/beyaz">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/beyaz"
+            android:fontFamily="sans-serif"
+            android:inputType="number"
+            android:textColor="@color/beyaz"
+            android:textColorHint="@color/beyaz"
+            android:textCursorDrawable="@drawable/imlec_siyah"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sifre"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="50dp"
-        android:backgroundTint="@color/beyaz"
-        android:ems="10"
-        android:fontFamily="sans-serif"
         android:hint="Şifre"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:paddingBottom="15dp"
-        android:textColor="@color/beyaz"
-        android:textColorHint="@color/beyaz_75"
-        android:textSize="20sp"
+        android:textColorHint="@color/beyaz"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/beyaz"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/beyaz"
+        app:hintTextColor="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kullaniciNo" />
+        app:layout_constraintTop_toBottomOf="@+id/telefon"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        app:startIconTint="@color/beyaz">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/beyaz"
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:textColor="@color/beyaz"
+            android:textColorHint="@color/beyaz"
+            android:textCursorDrawable="@drawable/imlec_siyah"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/girisButon"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/buton_beyaz"
+        android:background="@drawable/kare_egim_10"
         android:fontFamily="sans-serif-black"
         android:text="GİRİŞ YAP"
         android:textColor="@color/anaRenk"
         android:textSize="20sp"
+        app:backgroundTint="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sifre" />
 
