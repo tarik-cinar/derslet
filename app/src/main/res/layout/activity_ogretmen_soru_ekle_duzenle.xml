@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgretmenSoruEkleDuzenle">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/kaydet_buton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/soru"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Soru içeriğini giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/cevap1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Doğru cevap giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="false"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cevap1_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/soru" />
+
+            <View
+                android:id="@+id/cevap1_belirtec"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/daire"
+                android:backgroundTint="@color/anaRenk"
+                app:layout_constraintBottom_toBottomOf="@+id/cevap1"
+                app:layout_constraintEnd_toStartOf="@+id/cevap1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cevap1" />
+
+            <EditText
+                android:id="@+id/cevap2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Yanlış cevap giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cevap2_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/cevap1" />
+
+            <View
+                android:id="@+id/cevap2_belirtec"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/daire_kenar_bos"
+                app:layout_constraintBottom_toBottomOf="@+id/cevap2"
+                app:layout_constraintEnd_toStartOf="@+id/cevap2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cevap2" />
+
+            <EditText
+                android:id="@+id/cevap3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Yanlış cevap giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cevap3_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/cevap2" />
+
+            <View
+                android:id="@+id/cevap3_belirtec"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/daire_kenar_bos"
+                app:layout_constraintBottom_toBottomOf="@+id/cevap3"
+                app:layout_constraintEnd_toStartOf="@+id/cevap3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cevap3" />
+
+            <EditText
+                android:id="@+id/cevap4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Yanlış cevap giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cevap4_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/cevap3" />
+
+            <View
+                android:id="@+id/cevap4_belirtec"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/daire_kenar_bos"
+                app:layout_constraintBottom_toBottomOf="@+id/cevap4"
+                app:layout_constraintEnd_toStartOf="@+id/cevap4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cevap4" />
+
+            <EditText
+                android:id="@+id/cevap5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Yanlış cevap giriniz."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                android:textColor="@color/anaRenk"
+                android:textColorHint="@color/anaRenk_75"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cevap5_belirtec"
+                app:layout_constraintTop_toBottomOf="@+id/cevap4" />
+
+            <View
+                android:id="@+id/cevap5_belirtec"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/daire_kenar_bos"
+                app:layout_constraintBottom_toBottomOf="@+id/cevap5"
+                app:layout_constraintEnd_toStartOf="@+id/cevap5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cevap5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/kaydet_buton"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/kare_10_10_10_10"
+        android:backgroundTint="@color/anaRenk"
+        android:text="KAYDET"
+        android:textColor="@color/beyaz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

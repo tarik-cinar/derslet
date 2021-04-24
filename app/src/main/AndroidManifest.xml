@@ -12,7 +12,11 @@
 
         <!-- Geçici -->
         <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
 
@@ -32,13 +36,7 @@
             <activity android:name=".OgretmenQrKod"></activity>
 
             <!-- Sohbet -->
-            <activity android:name=".OgretmenSohbetListesi">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
+            <activity android:name=".OgretmenSohbetListesi"></activity>
             <activity android:name=".OgretmenSohbetMesajlasma"></activity>
 
             <!-- Duyuru -->
@@ -49,6 +47,9 @@
             <activity android:name=".OgretmenDerslerDersListesi"></activity>
             <activity android:name=".OgretmenDerslerGonderi"></activity>
             <activity android:name=".OgretmenGonderiEkle"></activity>
+            <activity android:name=".OgretmenKisaSinavEkle"></activity>
+            <activity android:name=".OgretmenSoruEkleDuzenle"></activity>
+
 
         <!-- Öğrenci -->
         <activity android:name=".OgrenciAyarlar"></activity>
