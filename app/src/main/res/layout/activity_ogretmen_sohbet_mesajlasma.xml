@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginEnd="25dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="25dp"
                 android:background="@drawable/kare_10_0_10_10_kenar"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="15dp"

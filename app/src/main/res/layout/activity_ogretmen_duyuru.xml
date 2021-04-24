@@ -10,33 +10,34 @@
         android:id="@+id/include"
         layout="@layout/ustbar1" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="45dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/anaRenk"
-        android:text="Ders Seçiniz"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
-
-    <View
-        android:id="@+id/yatay_cizgi"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ders_secim"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/anaRenk"
+        android:hint="Ders Seçim"
+        android:textColorHint="@color/anaRenk_75"
+        app:boxBackgroundColor="@color/anaRenk_5"
+        app:boxStrokeColor="@color/anaRenk"
+        app:endIconTint="@color/anaRenk"
+        app:hintTextColor="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <AutoCompleteTextView
+            android:id="@+id/ic_liste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textCursorDrawable="@drawable/imlec_siyah"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <ScrollView
         android:layout_width="0dp"
@@ -44,7 +45,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yatay_cizgi">
+        app:layout_constraintTop_toBottomOf="@+id/ders_secim">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -66,12 +67,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/duyuru"
+                android:id="@+id/duyuru_yazi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
                 android:background="@drawable/kare_10_10_10_10_kenar"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="10dp"
@@ -81,6 +83,7 @@
                 android:text="Duyuru yazısı"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/duyuru_baslik" />
@@ -89,7 +92,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/duyuru_ekle"
+        android:id="@+id/duyuru_ekle_buton"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginEnd="25dp"
@@ -97,7 +100,7 @@
         android:background="@drawable/daire_kenar_beyaz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_settings_33" />
+        app:srcCompat="@drawable/ic_baseline_add_33" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

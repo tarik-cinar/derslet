@@ -10,36 +10,37 @@
         android:id="@+id/include"
         layout="@layout/ustbar1" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="45dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/anaRenk"
-        android:text="Ders Seçiniz"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
-
-    <View
-        android:id="@+id/yatay_cizgi"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ders_secim"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/anaRenk"
+        android:hint="Ders Seçim"
+        android:textColorHint="@color/anaRenk_75"
+        app:boxBackgroundColor="@color/anaRenk_5"
+        app:boxStrokeColor="@color/anaRenk"
+        app:endIconTint="@color/anaRenk"
+        app:hintTextColor="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <AutoCompleteTextView
+            android:id="@+id/ic_liste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textCursorDrawable="@drawable/imlec_siyah"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/yeni_duyuru"
+        android:id="@+id/yeni_duyuru_yazi"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,7 +48,6 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/kare_10_10_10_10_kenar"
-        android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="Duyuru metni giriniz."
         android:inputType="textMultiLine"
@@ -58,24 +58,27 @@
         android:textColor="@color/anaRenk"
         android:textColorHint="@color/anaRenk_75"
         android:textSize="14sp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:layout_constraintBottom_toTopOf="@+id/gönder_buton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yatay_cizgi" />
+        app:layout_constraintTop_toBottomOf="@+id/ders_secim" />
 
     <Button
-        android:id="@+id/buton_gönder"
+        android:id="@+id/gönder_buton"
         android:layout_width="150dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/kare_10_10_10_10"
         android:backgroundTint="@color/anaRenk"
         android:fontFamily="sans-serif-medium"
         android:text="GÖNDER"
         android:textColor="@color/beyaz"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeni_duyuru_yazi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

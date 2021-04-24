@@ -11,21 +11,22 @@
         layout="@layout/ustbar1" />
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/altbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/gonderi0_baslik"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"
@@ -40,7 +41,7 @@
                 android:text="Gönderi Başlığı"
                 android:textAlignment="textStart"
                 android:textColor="@color/beyaz"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -53,7 +54,7 @@
                 android:background="@drawable/kare_0_0_10_10_kenar"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="10dp"
-                android:paddingTop="45dp"
+                android:paddingTop="40dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="15dp"
                 android:text="İçerik Yazısı"
@@ -101,7 +102,7 @@
             <TextView
                 android:id="@+id/kaynak0_baslik"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
@@ -129,7 +130,7 @@
                 android:background="@drawable/kare_0_0_10_10_kenar"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="10dp"
-                android:paddingTop="45dp"
+                android:paddingTop="40dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="15dp"
                 android:text="İçerik Yazısı"
@@ -177,7 +178,7 @@
             <TextView
                 android:id="@+id/kisasinav0_baslik"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
@@ -202,15 +203,17 @@
                 android:id="@+id/kisasinav0_icerik"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
                 android:background="@drawable/kare_0_0_10_10_kenar"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="10dp"
-                android:paddingTop="45dp"
+                android:paddingTop="40dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="15dp"
                 android:text="İçerik Yazısı"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/kisasinav0_baslik"
                 app:layout_constraintStart_toStartOf="@+id/kisasinav0_baslik"
                 app:layout_constraintTop_toBottomOf="@+id/kisasinav0_baslik" />
@@ -253,8 +256,19 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/gonderi_ekle_buton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/daire_kenar_beyaz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView4"
+        app:srcCompat="@drawable/ic_baseline_add_33" />
+
     <View
-        android:id="@+id/gonderi_altbar"
+        android:id="@+id/altbar"
         android:layout_width="0dp"
         android:layout_height="74dp"
         android:background="@color/anaRenk"
