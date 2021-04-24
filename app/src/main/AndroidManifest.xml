@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
 
+        <!-- Geçici -->
         <activity android:name=".Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,19 +18,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OgretmenDuyuruEkle" />
-        <activity android:name=".OgretmenDuyuru" />
-        <activity android:name=".OgretmenSohbetMesajlasma" />
-        <activity android:name=".OgretmenSohbetListesi" />
-        <activity android:name=".OgretmenQrKod" />
-        <activity android:name=".OgretmenDersKontrol" />
-        <activity android:name=".OgretmenDersKontrolKontrol" />
-        <activity android:name=".OgretmenMenu" />
-        <activity android:name=".OgretmenAyarlar" />
-        <activity android:name=".OgrenciAyarlar" />
+        <activity android:name=".MainActivity" />
+
+        <!-- Temel -->
         <activity android:name=".Giris" />
         <activity android:name=".Acilis" />
-        <activity android:name=".MainActivity" />
+
+        <!-- Öğretmen -->
+
+            <!-- Ana -->
+            <activity android:name=".OgretmenMenu" />
+            <activity android:name=".OgretmenAyarlar" />
+
+            <!-- Ders Kontrol -->
+            <activity android:name=".OgretmenDersKontrol" />
+            <activity android:name=".OgretmenDersKontrolKontrol" />
+            <activity android:name=".OgretmenQrKod" />
+
+            <!-- Sohbet -->
+            <activity android:name=".OgretmenSohbetListesi" />
+            <activity android:name=".OgretmenSohbetMesajlasma" />
+
+            <!-- Duyuru -->
+            <activity android:name=".OgretmenDuyuru" />
+            <activity android:name=".OgretmenDuyuruEkle" />
+
+            <!-- Dersler -->
+            <activity android:name=".OgretmenDerslerDersListesi" />
+            <activity android:name=".OgretmenDerslerGonderi" />
+
+        <!-- Öğrenci -->
+        <activity android:name=".OgrenciAyarlar" />
+
+
     </application>
 
 </manifest>
