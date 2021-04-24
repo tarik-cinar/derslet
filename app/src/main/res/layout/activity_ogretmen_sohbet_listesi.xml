@@ -33,12 +33,12 @@
                 android:fontFamily="sans-serif"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/ogrenci0_bilgi_bg"
+                app:layout_constraintEnd_toStartOf="@+id/ogrenci0_bilgi"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ogrenci_numarasi"
+                android:id="@+id/ogrenci0_numara"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -68,32 +68,24 @@
                 app:layout_constraintBottom_toBottomOf="@+id/Ogrenci0"
                 app:layout_constraintEnd_toEndOf="@+id/Ogrenci0"
                 app:layout_constraintStart_toStartOf="@+id/Ogrenci0"
-                app:layout_constraintTop_toBottomOf="@+id/ogrenci_numarasi" />
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci0_numara" />
 
-            <View
-                android:id="@+id/ogrenci0_bilgi_bg"
+            <TextView
+                android:id="@+id/ogrenci0_bilgi"
                 android:layout_width="100dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_0_10_0_10"
                 android:backgroundTint="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Cevaplandı"
+                android:textColor="@color/beyaz"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Ogrenci0"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/Ogrenci0"
                 app:layout_constraintTop_toTopOf="@+id/Ogrenci0" />
-
-            <TextView
-                android:id="@+id/ogrenci0_bilgi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:text="Okundu"
-                android:textColor="@color/beyaz"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_bilgi_bg"
-                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_bilgi_bg"
-                app:layout_constraintStart_toEndOf="@+id/Ogrenci0"
-                app:layout_constraintTop_toTopOf="@+id/ogrenci0_bilgi_bg" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

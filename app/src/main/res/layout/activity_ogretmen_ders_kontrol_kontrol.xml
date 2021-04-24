@@ -218,7 +218,7 @@
                 app:layout_constraintTop_toTopOf="@+id/ogrenci0" />
 
             <TextView
-                android:id="@+id/ogrenci0_isim"
+                android:id="@+id/ogrenci_isim"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

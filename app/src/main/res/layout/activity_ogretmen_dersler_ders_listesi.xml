@@ -24,9 +24,9 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/ders0"
+                android:id="@+id/ders0_isim"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/kare_10_0_10_0_kenar"
@@ -36,35 +36,26 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/ders0detay"
+                app:layout_constraintEnd_toStartOf="@+id/ders0_kisisayisi"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/ders0detay"
+            <TextView
+                android:id="@+id/ders0_kisisayisi"
                 android:layout_width="65dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_0_10_0_10"
                 android:backgroundTint="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="@+id/ders0"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ders0"
-                app:layout_constraintTop_toTopOf="@+id/ders0" />
-
-            <TextView
-                android:id="@+id/ders0detaymetni"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
+                android:gravity="center"
                 android:text="20"
-                android:textAlignment="center"
                 android:textColor="@color/beyaz"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/ders0detay"
-                app:layout_constraintStart_toEndOf="@+id/ders0"
-                app:layout_constraintTop_toTopOf="@+id/ders0detay" />
+                app:layout_constraintBottom_toBottomOf="@+id/ders0_isim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ders0_isim"
+                app:layout_constraintTop_toTopOf="@+id/ders0_isim" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

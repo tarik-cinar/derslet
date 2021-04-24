@@ -56,7 +56,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="15dp"
         android:textColor="@color/anaRenk"
-        android:textColorHint="@color/anaRenk"
+        android:textColorHint="@color/anaRenk_75"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

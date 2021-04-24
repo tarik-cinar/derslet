@@ -10,33 +10,36 @@
         android:id="@+id/include"
         layout="@layout/ustbar1" />
 
-    <View
-        android:id="@+id/bilgi_yazi_bg"
+    <ImageView
+        android:id="@+id/qrkod"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="0dp"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="99dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/anaRenk_5"
+        android:layout_marginBottom="99dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
         android:id="@+id/bilgi_yazi"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/kare_10_10_10_10"
+        android:backgroundTint="@color/anaRenk_5"
         android:fontFamily="sans-serif"
-        android:text="Ders İsmi"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:text='"Ders" isimli dersin QR Kodu'
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bilgi_yazi_bg"
-        app:layout_constraintEnd_toEndOf="@+id/bilgi_yazi_bg"
-        app:layout_constraintStart_toStartOf="@+id/bilgi_yazi_bg"
-        app:layout_constraintTop_toTopOf="@+id/bilgi_yazi_bg" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
