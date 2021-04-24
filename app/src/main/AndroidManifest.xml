@@ -10,17 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
         <activity android:name=".Test">
+
+        </activity>
+        <activity android:name=".OgretmenSohbetMesajlasma"></activity>
+        <activity android:name=".OgretmenSohbetListesi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OgretmenSohbetMesajlasma"></activity>
-        <activity android:name=".OgretmenSohbetListesi"></activity>
         <activity android:name=".OgretmenQrKod"></activity>
         <activity android:name=".OgretmenDersKontrol"></activity>
-        <activity android:name=".OgretmenDersKontrolKontrol"></activity>
+        <activity android:name=".OgretmenDersKontrolKontrol">
+
+        </activity>
         <activity android:name=".OgretmenMenu"></activity>
         <activity android:name=".OgretmenAyarlar"></activity>
         <activity android:name=".OgrenciAyarlar"></activity>

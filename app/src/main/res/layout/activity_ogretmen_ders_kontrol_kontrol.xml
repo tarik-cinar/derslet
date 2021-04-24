@@ -12,48 +12,6 @@
         layout="@layout/ustbar1" />
 
     <View
-        android:id="@+id/altbar"
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:background="@color/anaRenk"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buton_qrkod"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/beyaz"
-        android:fontFamily="sans-serif"
-        android:text="QR KOD AÇ"
-        android:textColor="@color/anaRenk"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/altbar"
-        app:layout_constraintEnd_toStartOf="@+id/buton_bitir"
-        app:layout_constraintStart_toStartOf="@id/altbar"
-        app:layout_constraintTop_toTopOf="@+id/altbar" />
-
-    <Button
-        android:id="@+id/buton_bitir"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="25dp"
-        android:background="@drawable/kare_10_10_10_10"
-        android:backgroundTint="@color/beyaz"
-        android:fontFamily="sans-serif"
-        android:text="BİTİR"
-        android:textColor="@color/anaRenk"
-        app:layout_constraintBottom_toBottomOf="@+id/altbar"
-        app:layout_constraintEnd_toEndOf="@+id/altbar"
-        app:layout_constraintStart_toEndOf="@+id/buton_qrkod"
-        app:layout_constraintTop_toTopOf="@+id/altbar" />
-
-    <View
         android:id="@+id/kisi_sayisi_bg"
         android:layout_width="125dp"
         android:layout_height="55dp"
@@ -66,16 +24,32 @@
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
-        android:id="@+id/kisi_sayisi"
+        android:id="@+id/kisisayisi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="40 / 45 kişi"
+        android:layout_marginStart="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="40"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kisi_sayisi_bg"
+        app:layout_constraintEnd_toStartOf="@+id/ders_kisi_sayisi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kisi_sayisi_bg"
+        app:layout_constraintTop_toTopOf="@+id/kisi_sayisi_bg" />
+
+    <TextView
+        android:id="@+id/ders_kisi_sayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text=" / 45 kişi"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/kisi_sayisi_bg"
         app:layout_constraintEnd_toEndOf="@+id/kisi_sayisi_bg"
-        app:layout_constraintStart_toStartOf="@+id/kisi_sayisi_bg"
+        app:layout_constraintStart_toEndOf="@+id/kisisayisi"
         app:layout_constraintTop_toTopOf="@+id/kisi_sayisi_bg" />
 
     <View
@@ -91,20 +65,35 @@
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
-        android:id="@+id/gecen_sure"
+        android:id="@+id/ders_gecen_sure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="Geçen süre: 10:15:45"
+        android:layout_marginStart="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Geçen süre: "
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gecen_sure_bg"
+        app:layout_constraintEnd_toStartOf="@+id/gecensure"
+        app:layout_constraintStart_toStartOf="@+id/gecen_sure_bg"
+        app:layout_constraintTop_toTopOf="@+id/gecen_sure_bg" />
+
+    <TextView
+        android:id="@+id/gecensure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="10:15:45"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/gecen_sure_bg"
         app:layout_constraintEnd_toEndOf="@+id/gecen_sure_bg"
-        app:layout_constraintStart_toStartOf="@+id/gecen_sure_bg"
+        app:layout_constraintStart_toEndOf="@+id/ders_gecen_sure"
         app:layout_constraintTop_toTopOf="@+id/gecen_sure_bg" />
 
     <View
-        android:id="@+id/ol_yatay_sol"
+        android:id="@+id/yatay_cizgi_sol"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="25dp"
@@ -129,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/kisi_sayisi_bg" />
 
     <View
-        android:id="@+id/ol_yatay_sag"
+        android:id="@+id/yatay_cizgi_sag"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="15dp"
@@ -140,49 +129,64 @@
         app:layout_constraintStart_toEndOf="@+id/ogrenci_listesi_baslik"
         app:layout_constraintTop_toTopOf="@+id/ogrenci_listesi_baslik" />
 
-    <EditText
-        android:id="@+id/ogrenci_arama"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ogrencino"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
-        android:backgroundTint="@color/anaRenk"
-        android:ems="10"
-        android:hint="Öğrenci Numarası Giriniz."
-        android:inputType="number"
-        android:paddingLeft="10dp"
-        android:textColor="@color/anaRenk"
-        android:textColorHint="@color/anaRenk_75"
-        app:layout_constraintEnd_toStartOf="@+id/ogrenci_ekle"
+        android:hint="Öğrenci Numarası"
+        android:textColorHint="@color/anaRenk"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/anaRenk"
+        app:hintTextColor="@color/anaRenk"
+        app:layout_constraintEnd_toStartOf="@+id/ogrenci_ekle_buton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ogrenci_listesi_baslik" />
+        app:layout_constraintTop_toBottomOf="@+id/ogrenci_listesi_baslik"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/anaRenk">
 
-    <Button
-        android:id="@+id/ogrenci_ekle"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/anaRenk"
+            android:fontFamily="sans-serif"
+            android:inputType="number"
+            android:text="17031410000"
+            android:textColor="@color/anaRenk"
+            android:textColorHint="@color/anaRenk"
+            android:textCursorDrawable="@drawable/imlec_siyah"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/ogrenci_ekle_buton"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/kare_10_10_10_10"
         android:backgroundTint="@color/anaRenk"
-        android:fontFamily="sans-serif-thin"
-        android:text="+"
-        android:textColor="@color/beyaz"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ogrenci_arama"
+        app:layout_constraintBottom_toBottomOf="@+id/ogrencino"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ogrenci_arama"
-        app:layout_constraintTop_toTopOf="@+id/ogrenci_arama" />
+        app:layout_constraintStart_toEndOf="@+id/ogrencino"
+        app:layout_constraintTop_toTopOf="@+id/ogrencino"
+        app:srcCompat="@drawable/ic_baseline_add_33" />
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toTopOf="@+id/altbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ogrenci_arama"
-        app:layout_constraintVertical_bias="0.204">
+        app:layout_constraintTop_toBottomOf="@+id/ogrencino">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -191,8 +195,9 @@
             <View
                 android:id="@+id/ogrenci0"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_10_10_10_10_kenar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -200,41 +205,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ogrenci0no"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
+                android:id="@+id/ogrenci0_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:fontFamily="sans-serif-medium"
-                android:lineSpacingExtra="5sp"
-                android:text="Öğrenci Numarası"
+                android:text="170314110000"
                 android:textColor="@color/anaRenk"
-                app:layout_constraintBottom_toTopOf="@+id/ogrenci0isim"
-                app:layout_constraintEnd_toEndOf="@+id/ogrenci0"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0"
                 app:layout_constraintStart_toStartOf="@+id/ogrenci0"
                 app:layout_constraintTop_toTopOf="@+id/ogrenci0" />
 
             <TextView
-                android:id="@+id/ogrenci0isim"
+                android:id="@+id/ogrenci0_isim"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="sans-serif-medium"
-                android:lineSpacingExtra="5sp"
-                android:text="Öğrenci İsim Soyisim"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Derslet Uygulaması"
                 android:textColor="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_no"
                 app:layout_constraintEnd_toEndOf="@+id/ogrenci0"
-                app:layout_constraintStart_toStartOf="@+id/ogrenci0"
-                app:layout_constraintTop_toBottomOf="@+id/ogrenci0no" />
+                app:layout_constraintStart_toEndOf="@+id/ogrenci0_no"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_no" />
 
             <View
                 android:id="@+id/ogrenci1"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
@@ -246,7 +247,7 @@
             <View
                 android:id="@+id/ogrenci2"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
@@ -258,7 +259,7 @@
             <View
                 android:id="@+id/ogrenci3"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
@@ -270,7 +271,7 @@
             <View
                 android:id="@+id/ogrenci4"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
@@ -282,17 +283,74 @@
             <View
                 android:id="@+id/ogrenci5"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10"
+                android:background="@drawable/kare_10_10_10_10_kenar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ogrenci4" />
 
+            <View
+                android:id="@+id/ogrenci6"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/kare_10_10_10_10_kenar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci5" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <View
+        android:id="@+id/altbar"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:background="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/qrkod_ac_buton"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/kare_10_10_10_10"
+        android:backgroundTint="@color/beyaz"
+        android:fontFamily="sans-serif-medium"
+        android:text="QR KOD AÇ"
+        android:textColor="@color/anaRenk"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/altbar"
+        app:layout_constraintEnd_toStartOf="@+id/ders_bitir_buton"
+        app:layout_constraintStart_toStartOf="@id/altbar"
+        app:layout_constraintTop_toTopOf="@+id/altbar" />
+
+    <Button
+        android:id="@+id/ders_bitir_buton"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/kare_10_10_10_10"
+        android:backgroundTint="@color/beyaz"
+        android:fontFamily="sans-serif-medium"
+        android:text="BİTİR"
+        android:textColor="@color/anaRenk"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/altbar"
+        app:layout_constraintEnd_toEndOf="@+id/altbar"
+        app:layout_constraintStart_toEndOf="@+id/qrkod_ac_buton"
+        app:layout_constraintTop_toTopOf="@+id/altbar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

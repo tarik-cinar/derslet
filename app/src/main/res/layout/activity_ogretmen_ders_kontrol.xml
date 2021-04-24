@@ -24,7 +24,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/ders0"
+                android:id="@+id/ders0_buton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -36,24 +36,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/ders0detay"
+                app:layout_constraintEnd_toStartOf="@+id/ders0_kisisayisi_bg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
-                android:id="@+id/ders0detay"
+                android:id="@+id/ders0_kisisayisi_bg"
                 android:layout_width="65dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_0_10_0_10"
                 android:backgroundTint="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="@+id/ders0"
+                app:layout_constraintBottom_toBottomOf="@+id/ders0_buton"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ders0"
-                app:layout_constraintTop_toTopOf="@+id/ders0" />
+                app:layout_constraintStart_toEndOf="@+id/ders0_buton"
+                app:layout_constraintTop_toTopOf="@+id/ders0_buton" />
 
             <TextView
-                android:id="@+id/ders0detaymetni"
+                android:id="@+id/ders0_kisisayisi_yazi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -62,9 +62,9 @@
                 android:textColor="@color/beyaz"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/ders0detay"
-                app:layout_constraintStart_toEndOf="@+id/ders0"
-                app:layout_constraintTop_toTopOf="@+id/ders0detay" />
+                app:layout_constraintEnd_toEndOf="@+id/ders0_kisisayisi_bg"
+                app:layout_constraintStart_toEndOf="@+id/ders0_buton"
+                app:layout_constraintTop_toTopOf="@+id/ders0_kisisayisi_bg" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

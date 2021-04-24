@@ -25,7 +25,7 @@
             android:layout_height="wrap_content">
 
             <View
-                android:id="@+id/kb_yatay_sol"
+                android:id="@+id/kb_yatay_cizgi_sol"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="25dp"
@@ -50,7 +50,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
-                android:id="@+id/kb_yatay_sag"
+                android:id="@+id/kb_yatay_cizgi_sag"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="15dp"
@@ -89,7 +89,7 @@
             </androidx.cardview.widget.CardView>
 
             <View
-                android:id="@+id/uygulama_ayarlari_yatay_sol"
+                android:id="@+id/uygulama_ayarlari_yatay_cizgi_sol"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="25dp"
@@ -114,7 +114,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
             <View
-                android:id="@+id/uygulama_ayarlari_yatay_sag"
+                android:id="@+id/uygulama_ayarlari_yatay_cizgi_sag"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="15dp"

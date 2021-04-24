@@ -8,7 +8,7 @@
     tools:context=".Giris">
 
     <TextView
-        android:id="@+id/uygulamaAdi"
+        android:id="@+id/uygulama_adi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/karsilamaMesaj"
+        android:id="@+id/karsilama_yazi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -35,10 +35,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uygulamaAdi" />
+        app:layout_constraintTop_toBottomOf="@+id/uygulama_adi" />
 
     <TextView
-        android:id="@+id/bilgiMesaj"
+        android:id="@+id/bilgi_yazi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -50,10 +50,10 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/karsilamaMesaj" />
+        app:layout_constraintTop_toBottomOf="@+id/karsilama_yazi" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/telefon"
+        android:id="@+id/ogrencino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -72,7 +72,7 @@
         app:hintTextColor="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bilgiMesaj"
+        app:layout_constraintTop_toBottomOf="@+id/bilgi_yazi"
         app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
         app:startIconTint="@color/beyaz">
 
@@ -109,7 +109,7 @@
         app:hintTextColor="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefon"
+        app:layout_constraintTop_toBottomOf="@+id/ogrencino"
         app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
         app:startIconTint="@color/beyaz">
 
@@ -127,7 +127,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/girisButon"
+        android:id="@+id/giris_buton"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

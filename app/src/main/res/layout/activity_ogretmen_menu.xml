@@ -55,7 +55,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/karsilama_mesaj"
+        android:id="@+id/ogretmen_karsilama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TextView
-        android:id="@+id/adsoy_mesaj"
+        android:id="@+id/ogretmen_isim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -78,7 +78,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/karsilama_mesaj" />
+        app:layout_constraintTop_toBottomOf="@+id/ogretmen_karsilama" />
 
     <Button
         android:id="@+id/duyuru_buton"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ustbar" />
 
     <TextView
-        android:id="@+id/duyuru_mesaj"
+        android:id="@+id/duyuru_buton_yazi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -123,7 +123,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ustbar" />
 
     <TextView
-        android:id="@+id/derskontrol_mesaj"
+        android:id="@+id/derskontrol_buton_yazi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -151,7 +151,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/dersler_buton_yazi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -179,7 +179,7 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/sohbet_buton_yazi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"

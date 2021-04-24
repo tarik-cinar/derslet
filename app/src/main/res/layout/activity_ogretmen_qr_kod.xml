@@ -11,7 +11,7 @@
         layout="@layout/ustbar1" />
 
     <View
-        android:id="@+id/bilgi"
+        android:id="@+id/bilgi_yazi_bg"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="25dp"
@@ -24,16 +24,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/bilgimetni"
-        android:layout_width="wrap_content"
+        android:id="@+id/bilgi_yazi"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="sans-serif"
         android:text="Ders İsmi"
+        android:textAlignment="center"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bilgi"
-        app:layout_constraintEnd_toEndOf="@+id/bilgi"
-        app:layout_constraintStart_toStartOf="@+id/bilgi"
-        app:layout_constraintTop_toTopOf="@+id/bilgi" />
+        app:layout_constraintBottom_toBottomOf="@+id/bilgi_yazi_bg"
+        app:layout_constraintEnd_toEndOf="@+id/bilgi_yazi_bg"
+        app:layout_constraintStart_toStartOf="@+id/bilgi_yazi_bg"
+        app:layout_constraintTop_toTopOf="@+id/bilgi_yazi_bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

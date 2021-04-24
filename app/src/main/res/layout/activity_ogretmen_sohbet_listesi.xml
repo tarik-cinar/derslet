@@ -11,6 +11,7 @@
         layout="@layout/ustbar1" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,19 +29,49 @@
                 android:layout_height="65dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/kare_10_0_10_0_kenar"
+                android:background="@drawable/kare_10_0_10_0_kenar_bos"
                 android:fontFamily="sans-serif"
-                android:paddingLeft="10dp"
-                android:text="ÖĞRENCİ NUMARASI\nÖĞRENCİ İSMİ SOYİSMİ"
-                android:textAlignment="textStart"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/ogrenci0detay"
+                app:layout_constraintEnd_toStartOf="@+id/ogrenci0_bilgi_bg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/ogrenci_numarasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="170314110000"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/ogrenci_isim"
+                app:layout_constraintEnd_toEndOf="@+id/Ogrenci0"
+                app:layout_constraintStart_toStartOf="@+id/Ogrenci0"
+                app:layout_constraintTop_toTopOf="@+id/Ogrenci0" />
+
+            <TextView
+                android:id="@+id/ogrenci_isim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Derslet Uygulaması"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Ogrenci0"
+                app:layout_constraintEnd_toEndOf="@+id/Ogrenci0"
+                app:layout_constraintStart_toStartOf="@+id/Ogrenci0"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci_numarasi" />
+
             <View
-                android:id="@+id/ogrenci0detay"
+                android:id="@+id/ogrenci0_bilgi_bg"
                 android:layout_width="100dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
@@ -52,33 +83,30 @@
                 app:layout_constraintTop_toTopOf="@+id/Ogrenci0" />
 
             <TextView
-                android:id="@+id/ogrenci0detaymetni"
+                android:id="@+id/ogrenci0_bilgi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:text="Okundu"
                 android:textColor="@color/beyaz"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0detay"
-                app:layout_constraintEnd_toEndOf="@+id/ogrenci0detay"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_bilgi_bg"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_bilgi_bg"
                 app:layout_constraintStart_toEndOf="@+id/Ogrenci0"
-                app:layout_constraintTop_toTopOf="@+id/ogrenci0detay" />
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_bilgi_bg" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/sohbet_ekleme"
+    <ImageButton
+        android:id="@+id/sohbet_ac_buton"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/daire_kenar_beyaz"
-        android:backgroundTint="@color/anaRenk"
-        android:fontFamily="sans-serif-thin"
-        android:text="+"
-        android:textColor="@color/beyaz"
-        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_33" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
