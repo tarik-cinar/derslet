@@ -46,6 +46,7 @@
             <!-- Dersler -->
             <activity android:name=".OgretmenDerslerDersListesi"></activity>
             <activity android:name=".OgretmenDerslerGonderi"></activity>
+            <activity android:name=".OgretmenGonderiEkle"></activity>
 
         <!-- Öğrenci -->
         <activity android:name=".OgrenciAyarlar"></activity>
