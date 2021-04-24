@@ -9,28 +9,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
-        <activity android:name=".Test">
 
-        </activity>
-        <activity android:name=".OgretmenSohbetMesajlasma"></activity>
-        <activity android:name=".OgretmenSohbetListesi">
+        <!-- Geçici -->
+        <activity android:name=".Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OgretmenQrKod"></activity>
-        <activity android:name=".OgretmenDersKontrol"></activity>
-        <activity android:name=".OgretmenDersKontrolKontrol">
-
-        </activity>
-        <activity android:name=".OgretmenMenu"></activity>
-        <activity android:name=".OgretmenAyarlar"></activity>
-        <activity android:name=".OgrenciAyarlar"></activity>
-        <activity android:name=".Giris"></activity>
-        <activity android:name=".Acilis"></activity>
         <activity android:name=".MainActivity" />
+
+        <!-- Temel -->
+        <activity android:name=".Giris" />
+        <activity android:name=".Acilis" />
+
+        <!-- Öğretmen -->
+
+            <!-- Ana -->
+            <activity android:name=".OgretmenMenu" />
+            <activity android:name=".OgretmenAyarlar" />
+
+            <!-- Ders Kontrol -->
+            <activity android:name=".OgretmenDersKontrol" />
+            <activity android:name=".OgretmenDersKontrolKontrol" />
+            <activity android:name=".OgretmenQrKod" />
+
+            <!-- Sohbet -->
+            <activity android:name=".OgretmenSohbetListesi" />
+            <activity android:name=".OgretmenSohbetMesajlasma" />
+
+            <!-- Duyuru -->
+            <activity android:name=".OgretmenDuyuru" />
+            <activity android:name=".OgretmenDuyuruEkle" />
+
+            <!-- Dersler -->
+            <activity android:name=".OgretmenDerslerDersListesi" />
+            <activity android:name=".OgretmenDerslerGonderi" />
+
+        <!-- Öğrenci -->
+        <activity android:name=".OgrenciAyarlar" />
+
+
     </application>
 
 </manifest>
