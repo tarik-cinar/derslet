@@ -17,7 +17,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/kare_egimli_10_tum_anarenk_5"
+        android:background="@drawable/kare_10_10_10_10"
+        android:backgroundTint="@color/anaRenk_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

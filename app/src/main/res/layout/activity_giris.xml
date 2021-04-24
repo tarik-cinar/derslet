@@ -134,7 +134,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/kare_egim_10"
+        android:background="@drawable/kare_10_10_10_10"
         android:fontFamily="sans-serif-black"
         android:text="GİRİŞ YAP"
         android:textColor="@color/anaRenk"

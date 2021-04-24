@@ -4,15 +4,10 @@
         android:width="2dp"
         android:color="@color/anaRenk" />
 
-    <solid android:color="@color/anaRenk" />
-
-    <padding
-        android:left="1dp"
-        android:right="1dp"
-        android:bottom="1dp"
-        android:top="1dp" />
+    <solid android:color="@color/beyaz" />
 
     <corners
         android:bottomRightRadius="10dp"
-        android:topRightRadius="10dp" />
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp" />
 </shape>
