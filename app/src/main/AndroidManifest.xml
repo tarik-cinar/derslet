@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
+
         <activity android:name=".Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,18 +17,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OgretmenDuyuru"></activity>
-        <activity android:name=".OgretmenSohbetMesajlasma"></activity>
-        <activity android:name=".OgretmenSohbetListesi"></activity>
-        <activity android:name=".OgretmenQrKod"></activity>
-        <activity android:name=".OgretmenDersKontrol"></activity>
-        <activity android:name=".OgretmenDersKontrolKontrol"></activity>
-        <activity android:name=".OgretmenMenu"></activity>
-        <activity android:name=".OgretmenAyarlar"></activity>
-        <activity android:name=".OgrenciAyarlar"></activity>
-        <activity android:name=".Giris"></activity>
-        <activity android:name=".Acilis"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".OgretmenDuyuruEkle" />
+        <activity android:name=".OgretmenDuyuru" />
+        <activity android:name=".OgretmenSohbetMesajlasma" />
+        <activity android:name=".OgretmenSohbetListesi" />
+        <activity android:name=".OgretmenQrKod" />
+        <activity android:name=".OgretmenDersKontrol" />
+        <activity android:name=".OgretmenDersKontrolKontrol" />
+        <activity android:name=".OgretmenMenu" />
+        <activity android:name=".OgretmenAyarlar" />
+        <activity android:name=".OgrenciAyarlar" />
+        <activity android:name=".Giris" />
+        <activity android:name=".Acilis" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@
         android:layout_marginEnd="45dp"
         android:background="@drawable/kare_10_10_10_10"
         android:backgroundTint="@color/anaRenk"
-        android:text="Açılır menü"
+        android:text="Ders Seçiniz"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
