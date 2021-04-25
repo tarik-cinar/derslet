@@ -57,6 +57,9 @@
                 <activity android:name=".OgretmenDerslerDegerlendirme"></activity>
                 <activity android:name=".OgretmenDegerlendirmeDetay"></activity>
 
+                <!-- Devamsızlık -->
+                <activity android:name=".OgretmenDerslerDevamsizlik"></activity>
+
 
 
         <!-- Öğrenci -->

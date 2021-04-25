@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgretmenDerslerDevamsizlik">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/altbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ders0_dvm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/kare_10_0_10_0_kenar"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="21 OCAK 2021 - 13:00"
+                android:textColor="@color/anaRenk"
+                app:layout_constraintEnd_toStartOf="@+id/ders0_dvm_bilgi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ders0_dvm_bilgi"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_0_10_0_10"
+                android:backgroundTint="@color/anaRenk"
+                android:gravity="center"
+                android:text="5/25"
+                android:textColor="@color/beyaz"
+                app:layout_constraintBottom_toBottomOf="@+id/ders0_dvm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ders0_dvm"
+                app:layout_constraintTop_toTopOf="@+id/ders0_dvm" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
+    <View
+        android:id="@+id/altbar"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:background="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
