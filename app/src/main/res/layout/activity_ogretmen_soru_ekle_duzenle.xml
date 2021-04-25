@@ -11,6 +11,7 @@
         layout="@layout/ustbar1" />
 
     <ScrollView
+        android:id="@+id/scrollView6"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/kaydet_buton"
@@ -22,205 +23,229 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/soru"
-                android:layout_width="0dp"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/soru_icerigi"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Soru içeriğini giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="15dp"
-                android:paddingTop="15dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="15dp"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
+                android:hint="Soru İçeriği"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_baseline_edit_24"
+                app:startIconTint="@color/anaRenk">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="Türkiyenin başkenti neresidir?"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cevap1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Doğru cevap giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="15dp"
-                android:singleLine="false"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
-                android:textSize="14sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Doğru Cevap"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cevap1_belirtec"
-                app:layout_constraintTop_toBottomOf="@+id/soru" />
-
-            <View
-                android:id="@+id/cevap1_belirtec"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="40dp"
-                android:background="@drawable/daire"
-                android:backgroundTint="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="@+id/cevap1"
-                app:layout_constraintEnd_toStartOf="@+id/cevap1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cevap1" />
+                app:layout_constraintTop_toBottomOf="@+id/soru_icerigi"
+                app:startIconDrawable="@drawable/ic_baseline_check_24"
+                app:startIconTint="@color/anaRenk">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="Ankara"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cevap2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Yanlış cevap giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="15dp"
-                android:singleLine="true"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
-                android:textSize="14sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Yanlış Cevap"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cevap2_belirtec"
-                app:layout_constraintTop_toBottomOf="@+id/cevap1" />
-
-            <View
-                android:id="@+id/cevap2_belirtec"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="40dp"
-                android:background="@drawable/daire_kenar_bos"
-                app:layout_constraintBottom_toBottomOf="@+id/cevap2"
-                app:layout_constraintEnd_toStartOf="@+id/cevap2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cevap2" />
+                app:layout_constraintTop_toBottomOf="@+id/cevap1"
+                app:startIconDrawable="@drawable/ic_baseline_close_24"
+                app:startIconTint="@color/anaRenk">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="Trabzon"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cevap3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Yanlış cevap giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="15dp"
-                android:singleLine="true"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
-                android:textSize="14sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Yanlış Cevap"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cevap3_belirtec"
-                app:layout_constraintTop_toBottomOf="@+id/cevap2" />
-
-            <View
-                android:id="@+id/cevap3_belirtec"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="40dp"
-                android:background="@drawable/daire_kenar_bos"
-                app:layout_constraintBottom_toBottomOf="@+id/cevap3"
-                app:layout_constraintEnd_toStartOf="@+id/cevap3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cevap3" />
+                app:layout_constraintTop_toBottomOf="@+id/cevap2"
+                app:startIconDrawable="@drawable/ic_baseline_close_24"
+                app:startIconTint="@color/anaRenk">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="İzmir"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cevap4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Yanlış cevap giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="15dp"
-                android:singleLine="true"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
-                android:textSize="14sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Yanlış Cevap"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cevap4_belirtec"
-                app:layout_constraintTop_toBottomOf="@+id/cevap3" />
-
-            <View
-                android:id="@+id/cevap4_belirtec"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="40dp"
-                android:background="@drawable/daire_kenar_bos"
-                app:layout_constraintBottom_toBottomOf="@+id/cevap4"
-                app:layout_constraintEnd_toStartOf="@+id/cevap4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cevap4" />
+                app:layout_constraintTop_toBottomOf="@+id/cevap3"
+                app:startIconDrawable="@drawable/ic_baseline_close_24"
+                app:startIconTint="@color/anaRenk">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="İstanbul"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cevap5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/kare_10_10_10_10_kenar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Yanlış cevap giriniz."
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="15dp"
-                android:singleLine="true"
-                android:textColor="@color/anaRenk"
-                android:textColorHint="@color/anaRenk_75"
-                android:textSize="14sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Yanlış Cevap"
+                android:textColorHint="@color/anaRenk"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/anaRenk"
+                app:hintTextColor="@color/anaRenk"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cevap5_belirtec"
-                app:layout_constraintTop_toBottomOf="@+id/cevap4" />
-
-            <View
-                android:id="@+id/cevap5_belirtec"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="40dp"
-                android:background="@drawable/daire_kenar_bos"
-                app:layout_constraintBottom_toBottomOf="@+id/cevap5"
-                app:layout_constraintEnd_toStartOf="@+id/cevap5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cevap5" />
+                app:layout_constraintTop_toBottomOf="@+id/cevap4"
+                app:startIconDrawable="@drawable/ic_baseline_close_24"
+                app:startIconTint="@color/anaRenk">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/anaRenk"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textMultiLine"
+                    android:text="Konya"
+                    android:textColor="@color/anaRenk"
+                    android:textColorHint="@color/anaRenk"
+                    android:textCursorDrawable="@drawable/imlec_siyah"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -229,6 +254,7 @@
         android:id="@+id/kaydet_buton"
         android:layout_width="160dp"
         android:layout_height="44dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:background="@drawable/kare_10_10_10_10"
         android:backgroundTint="@color/anaRenk"
@@ -236,7 +262,8 @@
         android:textColor="@color/beyaz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
