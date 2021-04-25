@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgretmenDegerlendirmeDetay">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
+    <TextView
+        android:id="@+id/dgr_soru1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/kare_10_0_10_0_kenar"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="Soru 1"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/dgr_soru1_ort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/dgr_soru1_ort"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/kare_0_10_0_10"
+        android:backgroundTint="@color/anaRenk"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="3.2"
+        android:textColor="@color/beyaz"
+        app:layout_constraintBottom_toBottomOf="@+id/dgr_soru1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dgr_soru1"
+        app:layout_constraintTop_toTopOf="@+id/dgr_soru1" />
+
+    <TextView
+        android:id="@+id/dgr_soru2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kare_10_0_10_0_kenar"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="Soru 2"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/dgr_soru2_ort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dgr_soru1" />
+
+    <TextView
+        android:id="@+id/dgr_soru2_ort"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/kare_0_10_0_10"
+        android:backgroundTint="@color/anaRenk"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="3.0"
+        android:textColor="@color/beyaz"
+        app:layout_constraintBottom_toBottomOf="@+id/dgr_soru2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dgr_soru2"
+        app:layout_constraintTop_toTopOf="@+id/dgr_soru2" />
+
+    <TextView
+        android:id="@+id/dgr_gnl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kare_10_0_10_0_kenar"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="Degerlendirme Ortalaması"
+        android:textColor="@color/anaRenk"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/dgr_gnl_ort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dgr_soru2" />
+
+    <TextView
+        android:id="@+id/dgr_gnl_ort"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/kare_0_10_0_10"
+        android:backgroundTint="@color/anaRenk"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="3.1"
+        android:textColor="@color/beyaz"
+        app:layout_constraintBottom_toBottomOf="@+id/dgr_gnl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dgr_gnl"
+        app:layout_constraintTop_toTopOf="@+id/dgr_gnl" />
+
+    <View
+        android:id="@+id/dgr_dty_yatay_cizgi"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/anaRenk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dgr_gnl" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dgr_dty_yatay_cizgi">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/ogrenci0_ort_bg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/kare_10_10_0_0"
+                android:backgroundTint="@color/anaRenk"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_ort"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_ort" />
+
+            <TextView
+                android:id="@+id/ogrenci0_ort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="Öğrencinin Değerlendirme Ortalaması:"
+                android:textColor="@color/beyaz"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_ort_bg"
+                app:layout_constraintStart_toStartOf="@+id/ogrenci0_ort_bg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ogrenci0_ort_dgr"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:gravity="left|center_vertical"
+                android:text="4.17"
+                android:textColor="@color/beyaz"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_ort"
+                app:layout_constraintStart_toEndOf="@+id/ogrenci0_ort"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_ort" />
+
+            <TextView
+                android:id="@+id/ogrenci0_yrm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kare_0_0_10_10_kenar"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="20dp"
+                android:text="Yorum Metni"
+                android:textColor="@color/anaRenk"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_ort_bg"
+                app:layout_constraintStart_toStartOf="@+id/ogrenci0_ort_bg"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci0_ort_bg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

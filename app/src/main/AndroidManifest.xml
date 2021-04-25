@@ -55,6 +55,7 @@
 
                 <!-- Değerlendirme -->
                 <activity android:name=".OgretmenDerslerDegerlendirme"></activity>
+                <activity android:name=".OgretmenDegerlendirmeDetay"></activity>
 
 
 
