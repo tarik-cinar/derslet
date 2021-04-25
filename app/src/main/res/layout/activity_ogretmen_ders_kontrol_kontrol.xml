@@ -68,29 +68,27 @@
         android:id="@+id/ders_gecen_sure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginEnd="60dp"
         android:fontFamily="sans-serif-black"
         android:text="Geçen süre: "
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/gecen_sure_bg"
-        app:layout_constraintEnd_toStartOf="@+id/gecensure"
+        app:layout_constraintEnd_toEndOf="@+id/gecen_sure_bg"
         app:layout_constraintStart_toStartOf="@+id/gecen_sure_bg"
         app:layout_constraintTop_toTopOf="@+id/gecen_sure_bg" />
 
     <TextView
         android:id="@+id/gecensure"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
         android:fontFamily="sans-serif-medium"
         android:text="10:15:45"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/gecen_sure_bg"
-        app:layout_constraintEnd_toEndOf="@+id/gecen_sure_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/ders_gecen_sure"
         app:layout_constraintStart_toEndOf="@+id/ders_gecen_sure"
-        app:layout_constraintTop_toTopOf="@+id/gecen_sure_bg" />
+        app:layout_constraintTop_toTopOf="@+id/ders_gecen_sure" />
 
     <View
         android:id="@+id/yatay_cizgi_sol"

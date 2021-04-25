@@ -10,23 +10,14 @@
         android:id="@+id/include"
         layout="@layout/ustbar1" />
 
-    <View
-        android:id="@+id/altbar"
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:background="@color/anaRenk"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/degerlendirme_sabit_metin"
+        android:id="@+id/degerlendirme_yazı"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="45dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Genel Değerlendirme Ortalaması : "
+        android:text="Genel Değerlendirme Ortalaması: "
         android:textAlignment="textEnd"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
@@ -38,26 +29,24 @@
         android:id="@+id/degerlendirme_ortalamasi"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="25dp"
         android:text="4.15"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/degerlendirme_sabit_metin"
-        app:layout_constraintStart_toEndOf="@+id/degerlendirme_sabit_metin"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
+        app:layout_constraintBottom_toBottomOf="@+id/degerlendirme_yazı"
+        app:layout_constraintStart_toEndOf="@+id/degerlendirme_yazı"
+        app:layout_constraintTop_toTopOf="@+id/degerlendirme_yazı" />
 
     <View
-        android:id="@+id/dgr_yatay_cizgi"
+        android:id="@+id/yatay_cizgi"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="25dp"
         android:background="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/degerlendirme_sabit_metin" />
+        app:layout_constraintTop_toBottomOf="@+id/degerlendirme_yazı" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -65,14 +54,14 @@
         app:layout_constraintBottom_toTopOf="@+id/altbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dgr_yatay_cizgi">
+        app:layout_constraintTop_toBottomOf="@+id/yatay_cizgi">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/dgr_buton"
+                android:id="@+id/degerlendirme0_buton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -85,13 +74,13 @@
                 android:paddingBottom="5dp"
                 android:text="21 OCAK 2021 - 13:00"
                 android:textColor="@color/anaRenk"
-                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintEnd_toStartOf="@+id/degerlendirme0_bilgi"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="100dp"
+                android:id="@+id/degerlendirme0_bilgi"
+                android:layout_width="70dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_0_10_0_10"
@@ -99,12 +88,21 @@
                 android:gravity="center"
                 android:text="4.43"
                 android:textColor="@color/beyaz"
-                app:layout_constraintBottom_toBottomOf="@+id/dgr_buton"
+                app:layout_constraintBottom_toBottomOf="@+id/degerlendirme0_buton"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dgr_buton"
-                app:layout_constraintTop_toTopOf="@+id/dgr_buton" />
+                app:layout_constraintStart_toEndOf="@+id/degerlendirme0_buton"
+                app:layout_constraintTop_toTopOf="@+id/degerlendirme0_buton" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <View
+        android:id="@+id/altbar"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:background="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
