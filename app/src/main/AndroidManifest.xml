@@ -59,6 +59,7 @@
                 <!-- Devamsızlık -->
                 <activity android:name=".OgretmenDerslerDevamsizlik"></activity>
                 <activity android:name=".OgretmenDevamsizlikDetay"></activity>
+                <activity android:name=".OgretmenDevamsizlikDetayOgrenci"></activity>
 
         <!-- Öğrenci -->
         <activity android:name=".OgrenciAyarlar"></activity>
