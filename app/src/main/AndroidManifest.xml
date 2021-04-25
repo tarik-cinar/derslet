@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Derslet">
-        <activity android:name=".OgretmenDevamsizlikDetay"></activity>
+
         <!-- Geçici -->
         <activity android:name=".Test">
             <intent-filter>
@@ -18,29 +18,50 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" /> <!-- Temel -->
-        <activity android:name=".Giris" />
-        <activity android:name=".Acilis" /> <!-- Öğretmen -->
-        <!-- Ana -->
-        <activity android:name=".OgretmenMenu" />
-        <activity android:name=".OgretmenAyarlar" /> <!-- Ders Kontrol -->
-        <activity android:name=".OgretmenDersKontrol" />
-        <activity android:name=".OgretmenDersKontrolKontrol" />
-        <activity android:name=".OgretmenQrKod" /> <!-- Sohbet -->
-        <activity android:name=".OgretmenSohbetListesi" />
-        <activity android:name=".OgretmenSohbetMesajlasma" /> <!-- Duyuru -->
-        <activity android:name=".OgretmenDuyuru" />
-        <activity android:name=".OgretmenDuyuruEkle" /> <!-- Dersler -->
-        <activity android:name=".OgretmenDerslerDersListesi" /> <!-- Gönderi -->
-        <activity android:name=".OgretmenDerslerGonderi" />
-        <activity android:name=".OgretmenKisaSinavSonuclar" />
-        <activity android:name=".OgretmenGonderiEkle" />
-        <activity android:name=".OgretmenKisaSinavEkle" />
-        <activity android:name=".OgretmenSoruEkleDuzenle" /> <!-- Değerlendirme -->
-        <activity android:name=".OgretmenDerslerDegerlendirme" />
-        <activity android:name=".OgretmenDegerlendirmeDetay" /> <!-- Devamsızlık -->
-        <activity android:name=".OgretmenDerslerDevamsizlik" /> <!-- Öğrenci -->
-        <activity android:name=".OgrenciAyarlar" />
+        <activity android:name=".MainActivity"></activity>
+
+        <!-- Temel -->
+        <activity android:name=".Giris"></activity>
+        <activity android:name=".Acilis"></activity>
+        <!-- Öğretmen -->
+
+            <!-- Ana -->
+            <activity android:name=".OgretmenMenu"></activity>
+            <activity android:name=".OgretmenAyarlar"></activity>
+
+            <!-- Ders Kontrol -->
+            <activity android:name=".OgretmenDersKontrol"></activity>
+            <activity android:name=".OgretmenDersKontrolKontrol"></activity>
+            <activity android:name=".OgretmenQrKod"></activity>
+
+            <!-- Sohbet -->
+            <activity android:name=".OgretmenSohbetListesi"></activity>
+            <activity android:name=".OgretmenSohbetMesajlasma"></activity>
+
+            <!-- Duyuru -->
+            <activity android:name=".OgretmenDuyuru"></activity>
+            <activity android:name=".OgretmenDuyuruEkle"></activity>
+
+            !-- Dersler -->
+            <activity android:name=".OgretmenDerslerDersListesi"></activity>
+
+                <!-- Gönderi -->
+                <activity android:name=".OgretmenDerslerGonderi"></activity>>
+                <activity android:name=".OgretmenKisaSinavSonuclar"></activity>
+                <activity android:name=".OgretmenGonderiEkle"></activity>
+                <activity android:name=".OgretmenKisaSinavEkle"></activity>
+                <activity android:name=".OgretmenSoruEkleDuzenle"></activity>
+
+                <!-- Değerlendirme -->
+                <activity android:name=".OgretmenDerslerDegerlendirme"></activity>
+                <activity android:name=".OgretmenDegerlendirmeDetay"></activity>
+
+                <!-- Devamsızlık -->
+                <activity android:name=".OgretmenDerslerDevamsizlik"></activity>
+                <activity android:name=".OgretmenDevamsizlikDetay"></activity>
+
+        <!-- Öğrenci -->
+        <activity android:name=".OgrenciAyarlar"></activity>
     </application>
 
 </manifest>
