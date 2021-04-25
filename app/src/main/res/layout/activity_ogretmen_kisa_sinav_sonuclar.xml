@@ -22,27 +22,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/ks_ogrenci0_bilgi"
+            <View
+                android:id="@+id/ogrenci0_bg"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/kare_10_0_10_0_kenar"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:text="Öğrenci Numarası\nÖğrenci isim soyisim"
-                android:textColor="@color/anaRenk"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/ks_ogrenci0_sonuc"
+                app:layout_constraintEnd_toStartOf="@+id/ogrenci0_sonuc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ks_ogrenci0_sonuc"
+                android:id="@+id/ogrenci0_numara"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="170314110000"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/ogrenci0_isim"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_bg"
+                app:layout_constraintStart_toStartOf="@+id/ogrenci0_bg"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_bg" />
+
+            <TextView
+                android:id="@+id/ogrenci0_isim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Derslet Uygulaması"
+                android:textColor="@color/anaRenk"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_bg"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_bg"
+                app:layout_constraintStart_toStartOf="@+id/ogrenci0_bg"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci0_numara" />
+
+            <TextView
+                android:id="@+id/ogrenci0_sonuc"
                 android:layout_width="65dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
@@ -50,13 +75,15 @@
                 android:backgroundTint="@color/anaRenk"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="5/5"
+                android:text="5 / 5"
                 android:textColor="@color/beyaz"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ks_ogrenci0_bilgi"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_bg"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ks_ogrenci0_bilgi"
-                app:layout_constraintTop_toTopOf="@+id/ks_ogrenci0_bilgi" />
+                app:layout_constraintStart_toEndOf="@+id/ogrenci0_bg"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_bg" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
