@@ -45,11 +45,16 @@
 
             <!-- Dersler -->
             <activity android:name=".OgretmenDerslerDersListesi"></activity>
-            <activity android:name=".OgretmenDerslerGonderi"></activity>
-            <activity android:name=".OgretmenKisaSinavSonuclar"></activity>
-            <activity android:name=".OgretmenGonderiEkle"></activity>
-            <activity android:name=".OgretmenKisaSinavEkle"></activity>
-            <activity android:name=".OgretmenSoruEkleDuzenle"></activity>
+
+                <!-- Gönderi -->
+                <activity android:name=".OgretmenDerslerGonderi"></activity>
+                <activity android:name=".OgretmenKisaSinavSonuclar"></activity>
+                <activity android:name=".OgretmenGonderiEkle"></activity>
+                <activity android:name=".OgretmenKisaSinavEkle"></activity>
+                <activity android:name=".OgretmenSoruEkleDuzenle"></activity>
+
+                <!-- Değerlendirme -->
+                <activity android:name=".OgretmenDerslerDegerlendirme"></activity>
 
 
 
