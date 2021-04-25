@@ -262,7 +262,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="96dp"
-        android:background="@drawable/daire_kenar_beyaz"
+        android:background="@drawable/buton_anarenk_daire_kenar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/scrollView4"
         app:srcCompat="@drawable/ic_baseline_add_33" />

@@ -128,20 +128,17 @@
 
     <Button
         android:id="@+id/giris_buton"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/kare_10_10_10_10"
+        android:background="@drawable/buton_beyaz"
         android:fontFamily="sans-serif-black"
         android:text="GİRİŞ YAP"
         android:textColor="@color/anaRenk"
         android:textSize="20sp"
-        app:backgroundTint="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sifre" />
 
