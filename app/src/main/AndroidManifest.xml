@@ -12,7 +12,11 @@
 
         <!-- Geçici -->
         <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
 
@@ -26,13 +30,7 @@
             <activity android:name=".OgretmenAyarlar"></activity>
 
             <!-- Ders Kontrol -->
-            <activity android:name=".OgretmenDersKontrol">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
+            <activity android:name=".OgretmenDersKontrol"></activity>
             <activity android:name=".OgretmenDersKontrolKontrol"></activity>
             <activity android:name=".OgretmenQrKod"></activity>
 
@@ -59,9 +57,7 @@
                 <activity android:name=".OgretmenDegerlendirmeDetay"></activity>
 
                 <!-- Devamsızlık -->
-                <activity android:name=".OgretmenDerslerDevamsizlik">
-
-                </activity>
+                <activity android:name=".OgretmenDerslerDevamsizlik"></activity>
                 <activity android:name=".OgretmenDevamsizlikDetay"></activity>
                 <activity android:name=".OgretmenDevamsizlikDetayOgrenci"></activity>
 
