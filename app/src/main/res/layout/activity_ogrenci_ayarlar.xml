@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/ustbar1" />
+        layout="@layout/ogrenci_ustbar" />
 
     <ScrollView
         android:layout_width="0dp"
