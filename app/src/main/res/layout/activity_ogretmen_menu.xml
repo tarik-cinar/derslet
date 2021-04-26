@@ -10,7 +10,7 @@
         android:id="@+id/ustbar"
         android:layout_width="wrap_content"
         android:layout_height="275dp"
-        android:background="@drawable/kare_0_0_30_30"
+        android:background="@drawable/anamenu_ustbar"
         android:backgroundTint="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

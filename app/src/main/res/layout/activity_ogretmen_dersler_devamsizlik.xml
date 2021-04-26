@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".OgretmenDerslerDevamsizlik">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/ustbar1" />
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -19,43 +23,41 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/ders0_dvm"
+                android:id="@+id/ders0_devamsizlik"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/kare_10_0_10_0_kenar"
-                android:gravity="left|center_vertical"
                 android:paddingLeft="10dp"
-                android:paddingTop="5dp"
+                android:paddingTop="15dp"
                 android:paddingRight="10dp"
-                android:paddingBottom="5dp"
+                android:paddingBottom="15dp"
                 android:text="21 OCAK 2021 - 13:00"
+                android:textAlignment="textStart"
                 android:textColor="@color/anaRenk"
-                app:layout_constraintEnd_toStartOf="@+id/ders0_dvm_bilgi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ders0_devamsizlik_bilgi"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ders0_dvm_bilgi"
+                android:id="@+id/ders0_devamsizlik_bilgi"
                 android:layout_width="70dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_0_10_0_10"
                 android:backgroundTint="@color/anaRenk"
                 android:gravity="center"
-                android:text="5/25"
+                android:text="5 / 25"
                 android:textColor="@color/beyaz"
-                app:layout_constraintBottom_toBottomOf="@+id/ders0_dvm"
+                app:layout_constraintBottom_toBottomOf="@+id/ders0_devamsizlik"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ders0_dvm"
-                app:layout_constraintTop_toTopOf="@+id/ders0_dvm" />
+                app:layout_constraintStart_toEndOf="@+id/ders0_devamsizlik"
+                app:layout_constraintTop_toTopOf="@+id/ders0_devamsizlik" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <include
-        android:id="@+id/include"
-        layout="@layout/ustbar1" />
 
     <View
         android:id="@+id/altbar"

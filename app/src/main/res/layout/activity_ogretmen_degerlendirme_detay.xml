@@ -11,7 +11,7 @@
         layout="@layout/ustbar1" />
 
     <TextView
-        android:id="@+id/dgr_soru1"
+        android:id="@+id/degerlendirme_soru1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -25,13 +25,13 @@
         android:text="Soru 1"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/dgr_soru1_ort"
+        app:layout_constraintEnd_toStartOf="@+id/degerlendirme_soru1_ortalama"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
-        android:id="@+id/dgr_soru1_ort"
-        android:layout_width="100dp"
+        android:id="@+id/degerlendirme_soru1_ortalama"
+        android:layout_width="80dp"
         android:layout_height="0dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/kare_0_10_0_10"
@@ -40,13 +40,13 @@
         android:gravity="center"
         android:text="3.2"
         android:textColor="@color/beyaz"
-        app:layout_constraintBottom_toBottomOf="@+id/dgr_soru1"
+        app:layout_constraintBottom_toBottomOf="@+id/degerlendirme_soru1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dgr_soru1"
-        app:layout_constraintTop_toTopOf="@+id/dgr_soru1" />
+        app:layout_constraintStart_toEndOf="@+id/degerlendirme_soru1"
+        app:layout_constraintTop_toTopOf="@+id/degerlendirme_soru1" />
 
     <TextView
-        android:id="@+id/dgr_soru2"
+        android:id="@+id/degerlendirme_soru2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -60,13 +60,13 @@
         android:text="Soru 2"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/dgr_soru2_ort"
+        app:layout_constraintEnd_toStartOf="@+id/degerlendirme_soru2_ortalama"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dgr_soru1" />
+        app:layout_constraintTop_toBottomOf="@+id/degerlendirme_soru1" />
 
     <TextView
-        android:id="@+id/dgr_soru2_ort"
-        android:layout_width="100dp"
+        android:id="@+id/degerlendirme_soru2_ortalama"
+        android:layout_width="80dp"
         android:layout_height="0dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/kare_0_10_0_10"
@@ -75,13 +75,13 @@
         android:gravity="center"
         android:text="3.0"
         android:textColor="@color/beyaz"
-        app:layout_constraintBottom_toBottomOf="@+id/dgr_soru2"
+        app:layout_constraintBottom_toBottomOf="@+id/degerlendirme_soru2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dgr_soru2"
-        app:layout_constraintTop_toTopOf="@+id/dgr_soru2" />
+        app:layout_constraintStart_toEndOf="@+id/degerlendirme_soru2"
+        app:layout_constraintTop_toTopOf="@+id/degerlendirme_soru2" />
 
     <TextView
-        android:id="@+id/dgr_gnl"
+        android:id="@+id/degerlendirme_genel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -95,13 +95,13 @@
         android:text="Degerlendirme Ortalaması"
         android:textColor="@color/anaRenk"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/dgr_gnl_ort"
+        app:layout_constraintEnd_toStartOf="@+id/degerlendirme_genel_ortalama"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dgr_soru2" />
+        app:layout_constraintTop_toBottomOf="@+id/degerlendirme_soru2" />
 
     <TextView
-        android:id="@+id/dgr_gnl_ort"
-        android:layout_width="100dp"
+        android:id="@+id/degerlendirme_genel_ortalama"
+        android:layout_width="80dp"
         android:layout_height="0dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/kare_0_10_0_10"
@@ -110,13 +110,13 @@
         android:gravity="center"
         android:text="3.1"
         android:textColor="@color/beyaz"
-        app:layout_constraintBottom_toBottomOf="@+id/dgr_gnl"
+        app:layout_constraintBottom_toBottomOf="@+id/degerlendirme_genel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dgr_gnl"
-        app:layout_constraintTop_toTopOf="@+id/dgr_gnl" />
+        app:layout_constraintStart_toEndOf="@+id/degerlendirme_genel"
+        app:layout_constraintTop_toTopOf="@+id/degerlendirme_genel" />
 
     <View
-        android:id="@+id/dgr_dty_yatay_cizgi"
+        android:id="@+id/yatay_cizgi"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="25dp"
@@ -125,67 +125,68 @@
         android:background="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dgr_gnl" />
+        app:layout_constraintTop_toBottomOf="@+id/degerlendirme_genel" />
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dgr_dty_yatay_cizgi">
+        app:layout_constraintTop_toBottomOf="@+id/yatay_cizgi"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <View
-                android:id="@+id/ogrenci0_ort_bg"
+                android:id="@+id/ogrenci0_ortalama_bg"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/kare_10_10_0_0"
                 android:backgroundTint="@color/anaRenk"
-                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_ort"
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_degerlendirme_ortalama_yazi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ogrenci0_ort" />
-
-            <TextView
-                android:id="@+id/ogrenci0_ort"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="45dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="right|center_vertical"
-                android:paddingLeft="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:text="Öğrencinin Değerlendirme Ortalaması:"
-                android:textColor="@color/beyaz"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_ort_bg"
-                app:layout_constraintStart_toStartOf="@+id/ogrenci0_ort_bg"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ogrenci0_ort_dgr"
+                android:id="@+id/ogrenci0_degerlendirme_ortalama_yazi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="right|center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="Öğrencinin Değerlendirme Ortalaması: "
+                android:textColor="@color/beyaz"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/ogrenci0_ortalama_bg"
+                app:layout_constraintStart_toStartOf="@id/ogrenci0_ortalama_bg"
+                app:layout_constraintTop_toTopOf="@id/ogrenci0_ortalama_bg" />
+
+            <TextView
+                android:id="@+id/ogrenci0_degerlendirme_ortalama"
                 android:layout_width="40dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="5dp"
                 android:gravity="left|center_vertical"
                 android:text="4.17"
                 android:textColor="@color/beyaz"
-                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_ort"
-                app:layout_constraintStart_toEndOf="@+id/ogrenci0_ort"
-                app:layout_constraintTop_toTopOf="@+id/ogrenci0_ort" />
+                app:layout_constraintBottom_toBottomOf="@+id/ogrenci0_degerlendirme_ortalama_yazi"
+                app:layout_constraintStart_toEndOf="@+id/ogrenci0_degerlendirme_ortalama_yazi"
+                app:layout_constraintTop_toTopOf="@+id/ogrenci0_degerlendirme_ortalama_yazi" />
 
             <TextView
-                android:id="@+id/ogrenci0_yrm"
+                android:id="@+id/ogrenci0_yorum"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/kare_0_0_10_10_kenar"
                 android:fontFamily="sans-serif-medium"
                 android:paddingLeft="15dp"
@@ -194,9 +195,10 @@
                 android:paddingBottom="20dp"
                 android:text="Yorum Metni"
                 android:textColor="@color/anaRenk"
-                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_ort_bg"
-                app:layout_constraintStart_toStartOf="@+id/ogrenci0_ort_bg"
-                app:layout_constraintTop_toBottomOf="@+id/ogrenci0_ort_bg" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ogrenci0_ortalama_bg"
+                app:layout_constraintStart_toStartOf="@+id/ogrenci0_ortalama_bg"
+                app:layout_constraintTop_toBottomOf="@+id/ogrenci0_ortalama_bg" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

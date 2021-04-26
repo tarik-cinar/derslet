@@ -12,7 +12,11 @@
 
         <!-- Geçici -->
         <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
 
@@ -58,13 +62,7 @@
                 <activity android:name=".OgretmenDevamsizlikDetayOgrenci"></activity>
 
         <!-- Öğrenci -->
-        <activity android:name=".OgrenciAyarlar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".OgrenciAyarlar"></activity>
     </application>
 
 </manifest>

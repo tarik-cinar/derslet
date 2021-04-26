@@ -26,10 +26,12 @@
             <Button
                 android:id="@+id/ogrenci0_buton"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/kare_10_0_10_0_kenar_bos"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ogrenci0_bilgi"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

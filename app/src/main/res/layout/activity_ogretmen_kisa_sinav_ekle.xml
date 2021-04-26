@@ -25,9 +25,10 @@
             <Button
                 android:id="@+id/soru0_isim"
                 android:layout_width="0dp"
-                android:layout_height="65dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/kare_10_0_10_0_kenar"
                 android:fontFamily="sans-serif-medium"
                 android:paddingLeft="10dp"
@@ -35,6 +36,7 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/anaRenk"
                 android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/soru0_duzenle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
